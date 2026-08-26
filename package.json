@@ -1,0 +1,21 @@
+{
+  "name": "git-sha-graph",
+  "displayName": "Git SHA Graph",
+  "description": "Click a commit SHA in the terminal to open it in Source Control GRAPH.",
+  "version": "0.1.0",
+  "publisher": "munkiwarra",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["SCM", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitShaGraph.open",
+        "title": "Git SHA Graph: Open Commit in Source Control"
+      }
+    ]
+  }
+}
